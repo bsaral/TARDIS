@@ -3,7 +3,7 @@
 	include("_header.php");
 	session_start();
 
-	error_reporting(E_ALL ^ E_NOTICE);
+	
 
 	
 	if(isset($_SESSION['name']))
@@ -25,14 +25,14 @@
 	<div style ="position: relative;top: -0.5in;">
 		<div class="control-group ">
 
-		  <input type="text" name="name" placeholder="KULLANICI ADI" style ="width:3.2in;"/><br/><br/>
-		  <input type="password" name="password" placeholder="PAROLA" style ="width:3.2in;"/><br/><br/>
+		  <input type="text" name="name" placeholder="KULLANICI ADI" style ="width:3.2in;height:30px;"/><br/><br/>
+		  <input type="password" name="password" placeholder="PAROLA" style ="width:3.2in;height:30px;"/><br/><br/>
 
 		</div>
 		<br/><br>
 
-		<input type="submit" value="GÖNDER" class = "btn  btn-primary" style ="width:2in;position: relative;left: -0.4in;top:0px;"/>
-		<input type="reset" name="reset" class = "btn  btn-danger"  style ="width:2in;position: relative;left: 1.9in;top:-38px" value="RESET">
+		<input type="submit" value="GÖNDER" class = "btn  btn-primary" style ="width:2in;height:50px;position: relative;left: -0.4in;top:0px;"/>
+		<input type="reset" name="reset" class = "btn  btn-danger"  style ="width:2in;height:50px;position: relative;left: 1.9in;top:-50px" value="RESET">
 	</div>
 	</form>
 	</div>
