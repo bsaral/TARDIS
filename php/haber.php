@@ -21,8 +21,8 @@
 		  <b >HABER<b><br><br>
 		  <textarea  name="haber" class="ckeditor"></textarea><br/><br/>
 		  <b style="position: absolute;left: 5in;top:0px"/>RESİM<b>
-		  <input type="hidden" name="MAX_FILE_SIZE" value="524288" />
-		  <input type="file" name="resim" id="resim" style="position: absolute;left: 0in;top:60px"/>
+		  
+		  <input type="file" name="dosya" id="dosya"  style="position: absolute;left: 0in;top:60px"/>
 		  
 
 		</div>
@@ -37,37 +37,43 @@
 
 <?php
 if(isset($_POST['ekle'])){
+	
+	$dosyayolu = $_FILES['dosya']['tmp_name']; 
 	$title = $_POST['title'];
 	$haber = $_POST['haber'];
-	$sql1 = mysql_query("INSERT into news(title,haber) values ('$title','simple_format($haber')");
-	if(is_uploaded_file($_FILES['resim']['name'])){
- 
-	$maxsize=$_POST['MAX_FILE_SIZE'];		
-	$size=$_FILES['resim']['size'];
- 
-	$imgdetails = getimagesize($_FILES['resim']['name']);
-	$mime_type = $imgdetails['mime']; 
- 
+	$resim = "../img/upload/" . $_FILES['dosya']['name']; 
 	
-	if(($mime_type=='image/jpeg')||($mime_type=='image/gif') ||($mime_type=='image/png')){
-	  
-	 
-	    $filename=$_FILES['resim']['name'];	
-	    $imgData =addslashes (file_get_contents($_FILES['resim']['tmp_name']));
-	    $sql="INSERT into news(name,image,type,size) values ('$filename','$imgData','".$mime_type."','".addslashes($imgdetails[3])."')";					
-	    mysql_query($sql,$link) or die(mysql_error());
-	  
-	}else{
-	  echo "
+	if($title == "" || $haber == ""){
+		echo "
 			<div class = 'span7'>	
-	
-			<div class='alert alert-success' style = 'position:relative;top:150px;left:6in;font-size:20px;'>
-  				<button type='button' class='close' data-dismiss='alert'>&times;</button>
-  				<strong>Dikkat !</strong><br><br> Sadece Resim Ekleyebilirsiniz2 !
+		
+			<div class='alert alert-error' style = 'position:relative;top:50px;left:1in;font-size:20px;'>
+				<button type='button' class='close' data-dismiss='alert'>&times;</button>
+				<strong>Dikkat !   </strong>&nbsp;&nbsp;&nbsp;Lütfen Alanları Boş Bırakmayınız !
 			</div></div>";
 	}
- 
-}
+	
+	else {
+		$sorgu = mysql_query("insert into news(title,haber,image) values('$title','$haber','$resim')");
+		if($sorgu) {
+
+			header('Location: haber_liste.php');
+		}
+		
+		
+		 else{
+			echo "
+				<div class = 'span7'>	
+			
+				<div class='alert alert-error' style = 'position:relative;top:50px;left:5.5in;font-size:20px;'>
+					<button type='button' class='close' data-dismiss='alert'>&times;</button>
+					<strong>Dikkat !   </strong>&nbsp;&nbsp;&nbsp;Eski Parola Yanlış Girildi !
+				</div></div>";
+				
+				
+				
+		 }
+	}
 }
 
 ?>
