@@ -32,7 +32,7 @@
           <li class="nav-header" style="font-size:15px;">SAYFA YöNETİMİ</li><br>
           <li class="active"><a href="#"><i class="icon-white icon-home"></i> Ana Sayfa</a></li><br>
           <li><a href="haber.php"><i class="icon-book"></i> Haber Sayfası</a></li><br>
-          <li><a href="#"><i class=" icon-folder-open"></i> Referans Sayfası</a></li><br>
+          <li><a href="referans.php"><i class=" icon-folder-open"></i> Referans Sayfası</a></li><br>
           <li><a href="#"><i class="icon-pencil"></i> Projeler Sayfası</a></li><br>
           
           <li class="nav-header" style="font-size:15px;">İLETİŞİM BİLGİLERİ</li><br>

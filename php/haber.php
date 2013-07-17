@@ -42,8 +42,13 @@ if(isset($_POST['ekle'])){
 	$title = $_POST['title'];
 	$haber = $_POST['haber'];
 	$resim = "../img/upload/" . $_FILES['dosya']['name']; 
+
+	if (isset($_POST['dosya'])){
+		$copied = copy($_FILES['dosya']['tmp_name'], $resim);
+		}
 	
-	if($title == "" || $haber == ""){
+		
+	if($title == "" || $haber == "" ){
 		echo "
 			<div class = 'span7'>	
 		
