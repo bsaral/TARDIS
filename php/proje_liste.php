@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 	 
 	session_start();
 	include("_header2.php");
@@ -9,17 +9,18 @@
 		{
 			header('Location: index.php');
 		}
-	$sql = mysql_query ("SELECT * FROM news ORDER BY id DESC ");
-	$count = mysql_query("SELECT count(*) FROM news");
+	$sql = mysql_query ("SELECT * FROM proje ORDER BY id DESC ");
+	$count = mysql_query("SELECT count(*) FROM proje");
 	$num = 0;
 ?>
 
 <div  style="position:absolute;top:100px;left:5in;width:9in;font-size:18px;">
 <table class="table table-bordered table-striped table-hover">
 	<tr class="error">
-		<th> HABER BAŞLIĞI </th>
-		<th> HABER </th>
-		<th> RESİM </th>
+		<th> ID </th>
+		<th> PROJE İSMİ </th>
+		<th> PROJE AÇIKLAMASI </th>
+		<th> PROJE RESMİ </th>
 	</tr>
 	<?php 
 	if($count != 0)
@@ -27,9 +28,10 @@
     while($satir = mysql_fetch_array($sql))
 	{
     echo "<tr >
-		<td>".$satir['title']. "</td>
-		<td>".$satir['haber']. "</td>
-		<td><img src=".$satir['image']." style='width:100px;height:100px;'></td>
+		<td>".$satir['id']. "</td>
+		<td>".$satir['p_name']. "</td>
+		<td>".$satir['content']. "</td>
+		<td><img src=".$satir['resim']." style='width:100px;height:100px;'></td>
 	</tr>";
 	}
 	

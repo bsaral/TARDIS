@@ -30,10 +30,10 @@
   <div class="span3" style="position:absolute;top:100px;left:100px;">
   <ul class="nav nav-list">
           <li class="nav-header" style="font-size:15px;">SAYFA YöNETİMİ</li><br>
-          <li class="active"><a href="#"><i class="icon-white icon-home"></i> Ana Sayfa</a></li><br>
+          <li class="active"><a href="toplam_liste.php"><i class="icon-white icon-home"></i> Ana Sayfa</a></li><br>
           <li><a href="haber.php"><i class="icon-book"></i> Haber Sayfası</a></li><br>
           <li><a href="referans.php"><i class=" icon-folder-open"></i> Referans Sayfası</a></li><br>
-          <li><a href="#"><i class="icon-pencil"></i> Projeler Sayfası</a></li><br>
+          <li><a href="proje.php"><i class="icon-pencil"></i> Projeler Sayfası</a></li><br>
           
           <li class="nav-header" style="font-size:15px;">İLETİŞİM BİLGİLERİ</li><br>
           <li ><a href="#"><i class=" icon-envelope"></i> Gelen Kutusu</a></li><br>
