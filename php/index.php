@@ -6,7 +6,7 @@
 
 	if(isset($_SESSION['name']))
 		{
-			header('Location: success.php');
+			header('Location: toplam_liste.php');
 		}
 	
 ?>
@@ -17,7 +17,7 @@
 	<div class = "span6">	
 
 
-	<div class = "hero-unit" style ="position: relative;left: 2.5in;top:1.5in;height: 3in" >
+	<div class = "hero-unit" style ="position: relative;left: 2.5in;top:1.5in;height: 3in;background-color:#f3edd2" >
 	<form action=""  method="post">
 	<h3 style ="position: relative;left: 1.2in;top:-60px"> GİRİŞ YAP </h3><br>
 	<div style ="position: relative;top: -0.5in;">
@@ -46,7 +46,7 @@ $login = mysql_query("SELECT * FROM users WHERE (name = '" . mysql_real_escape_s
 			
 			$_SESSION['name'] = $_POST['name'];
 			
-			header('Location: success.php');
+			header('Location: toplam_liste.php');
 		}
 	else 
 		{

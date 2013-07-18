@@ -28,19 +28,16 @@
 
 	<!-- HABERLER TABLOSU -->
 
-<table class="table table-bordered table-striped table-hover">
+<table class="table table-bordered table-striped table-hover"  cellpadding="3">
 	
 	<thead>
-		<B ><tr > <th > HABERLER TABLOSU</th></B>
+	<B ><tr > <th colspan="5" style ="text-align:center;background-color:#f2dede"> HABERLER TABLOSU</th></tr></B>
 		
-		
-		
-	    </tr>
 	<tr class="error">
-		<th > ID </th>
-		<th > HABER BAŞLIĞI </th>
-		<th> HABER </th>
-		<th> RESİM </th>
+		<th width="100" style ="background-color:#f3edd2" > ID </th>
+		<th style ="background-color:#f3edd2"> HABER BAŞLIĞI </th>
+		<th style ="background-color:#f3edd2"> HABER </th>
+		<th style ="background-color:#f3edd2"> RESİM </th>
 	</tr>
 </thead>
 	<?php 
@@ -51,7 +48,7 @@
     echo "<tr >
     	<td >".$satir['id']. "</td>
 		<td >".$satir['title']. "</td>
-		<td colspan='4'>".$satir['haber']. "</td>
+		<td >".$satir['haber']. "</td>
 		<td ><img src=".$satir['image']." style='width:100px;height:60px;'></td>
 	</tr>";
 	}
@@ -73,14 +70,14 @@
 <table class="table table-bordered table-striped table-hover">
 	
 	<thead>
-	<B ><tr > <th > REFERANSLAR TABLOSU</th></tr></B>
+	<B ><tr > <th colspan="7" style ="text-align:center;background-color:#f2dede"> REFERANSLAR TABLOSU</th></tr></B>
 	<tr class="error">
-		<th> ID </th>
-		<th> YER </th>
-		<th> PROJE </th>
-		<th> FİRMA </th>
-		<th> TESLİM </th>
-		<th> RESİM </th>
+		<th width="100" style ="background-color:#f3edd2"> ID </th>
+		<th style ="background-color:#f3edd2"> YER </th>
+		<th style ="background-color:#f3edd2"> PROJE </th>
+		<th style ="background-color:#f3edd2"> FİRMA </th>
+		<th style ="background-color:#f3edd2"> TESLİM </th>
+		<th style ="background-color:#f3edd2"> RESİM </th>
 	</tr>
 	<?php 
 	if($count != 0)
@@ -116,12 +113,12 @@
 <table class="table table-bordered table-striped table-hover">
 	
 	<thead>
-	<B ><tr > <th > PROJELER TABLOSU</th></tr></B>
+	<B ><tr > <th colspan="5" style ="text-align:center;background-color:#f2dede"> PROJELER TABLOSU</th></tr></B>
 	<tr class="error">
-		<th> ID </th>
-		<th> PROJE İSMİ </th>
-		<th> PROJE AÇIKLAMASI </th>
-		<th> PROJE RESMİ </th>
+		<th width="100" style ="background-color:#f3edd2"> ID </th>
+		<th style ="background-color:#f3edd2"> PROJE İSMİ </th>
+		<th style ="background-color:#f3edd2"> PROJE AÇIKLAMASI </th>
+		<th style ="background-color:#f3edd2"> PROJE RESMİ </th>
 	</tr>
 	<?php 
 	if($count != 0)

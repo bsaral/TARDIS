@@ -11,7 +11,7 @@
 		}
 ?>
 
-<div class="hero-unit" style="position:absolute;top:120px;left:6in;width:auto;">
+<div class="hero-unit" style="position:absolute;top:120px;left:6in;width:auto;background-color:#f3edd2">
 <form action=""  method="post">
 	<h3 style ="position: relative;left: 1in;top:-60px"> PAROLA DEĞİŞTiR </h3><br>
 	<div style ="position: relative;top: -0.5in;">

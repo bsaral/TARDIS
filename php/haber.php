@@ -11,7 +11,7 @@
 		}
 ?>
 
-<div class="hero-unit" style="position:absolute;top:100px;left:4.5in;width:auto;">
+<div class="hero-unit" style="position:absolute;top:100px;left:4.5in;width:auto;background-color:#f3edd2">
 <form action=''  method="post" enctype="multipart/form-data">
 	<h3 style ="position: relative;left: 3in;top:-60px;font-weight:bold;"> HABER EKLE </h3><br>
 	<div style ="position: relative;top: -0.5in;">

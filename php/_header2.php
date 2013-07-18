@@ -36,7 +36,7 @@
           <li><a href="proje.php"><i class="icon-pencil"></i> Projeler Sayfası</a></li><br>
           
           <li class="nav-header" style="font-size:15px;">İLETİŞİM BİLGİLERİ</li><br>
-          <li ><a href="#"><i class=" icon-envelope"></i> Gelen Kutusu</a></li><br>
+          <li ><a href="gelen_kutusu.php"><i class=" icon-envelope"></i> Gelen Kutusu</a></li><br>
           <li><a href="#"><i class=" icon-briefcase"></i> İş Başvuruları</a></li><br>
           
           <li class="nav-header" style="font-size:15px;">HESAP BİLGİLERİ</li><br>
