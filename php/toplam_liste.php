@@ -31,13 +31,16 @@
 <table class="table table-bordered table-striped table-hover"  cellpadding="3">
 	
 	<thead>
-	<B ><tr > <th colspan="5" style ="text-align:center;background-color:#f2dede"> HABERLER TABLOSU</th></tr></B>
+	<B ><tr ><th colspan="7" style ="text-align:center;background-color:#d9edf7"> HABERLER TABLOSU</th></tr></B>
+	
 		
 	<tr class="error">
-		<th width="100" style ="background-color:#f3edd2" > ID </th>
-		<th style ="background-color:#f3edd2"> HABER BAŞLIĞI </th>
+		<th width="30" style ="background-color:#f3edd2" > ID </th>
+		<th width="200" style ="background-color:#f3edd2"> HABER BAŞLIĞI </th>
 		<th style ="background-color:#f3edd2"> HABER </th>
 		<th style ="background-color:#f3edd2"> RESİM </th>
+		<th width="30" style="background-color:#f3edd2"> </th>
+		<th  width="30" style="background-color:#f3edd2"> </th>
 	</tr>
 </thead>
 	<?php 
@@ -50,6 +53,8 @@
 		<td >".$satir['title']. "</td>
 		<td >".$satir['haber']. "</td>
 		<td ><img src=".$satir['image']." style='width:100px;height:60px;'></td>
+		<td><a href='delete.php?title=".$satir['title']."' class='btn btn-danger' > SİL</a></td>
+		<td><a href='haber.php?id=".$satir['id']."' class='btn btn-info'>DÜZENLE</a></td>
 	</tr>";
 	}
 	
@@ -64,20 +69,24 @@
 	}
 	?>
 </table><br><br><br>
+<a href='haber_liste.php' style='margin-left:350px;margin-top:-80px;height:30px;'  class='btn  btn-success' > TÜM HABER LİSTELERİ</a><br><br><br>
 
 			<!-- REFERANS TABLOSU -->
 
 <table class="table table-bordered table-striped table-hover">
 	
 	<thead>
-	<B ><tr > <th colspan="7" style ="text-align:center;background-color:#f2dede"> REFERANSLAR TABLOSU</th></tr></B>
+	<B ><tr > <th colspan="8" style ="text-align:center;background-color:#d9edf7"> REFERANSLAR TABLOSU</th></tr></B>
 	<tr class="error">
-		<th width="100" style ="background-color:#f3edd2"> ID </th>
+		<th width="30" style ="background-color:#f3edd2"> ID </th>
 		<th style ="background-color:#f3edd2"> YER </th>
 		<th style ="background-color:#f3edd2"> PROJE </th>
 		<th style ="background-color:#f3edd2"> FİRMA </th>
 		<th style ="background-color:#f3edd2"> TESLİM </th>
 		<th style ="background-color:#f3edd2"> RESİM </th>
+		<th  width="30" style="background-color:#f3edd2"> </th>
+		<th width="30" style="background-color:#f3edd2"> </th>
+
 	</tr>
 	<?php 
 	if($count != 0)
@@ -91,6 +100,8 @@
 		<td>".$satir['firma']. "</td>
 		<td>".$satir['tarih']. "</td>
 		<td><img src=".$satir['resim']." style='width:100px;height:60px;'></td>
+		<td><a href='delete.php?proje=".$satir['proje']."' class='btn btn-danger'>SİL</a></td>
+		<td><a href='referans.php?id=".$satir['id']."' class='btn btn-info'>DÜZENLE</a></td>
 	</tr>";
 	}
 	
@@ -107,18 +118,21 @@
 	
 	?>
 </table><br><br><br>
+<a href='referans_liste.php' style='margin-left:350px;margin-top:-80px;height:30px;'  class='btn  btn-success' > TÜM REFERANS LİSTELERİ</a><br><br><br>
 
 		<!-- PROJELER TABLOSU -->
 
 <table class="table table-bordered table-striped table-hover">
 	
 	<thead>
-	<B ><tr > <th colspan="5" style ="text-align:center;background-color:#f2dede"> PROJELER TABLOSU</th></tr></B>
+	<B ><tr > <th colspan="7" style ="text-align:center;background-color:#d9edf7"> PROJELER TABLOSU</th></tr></B>
 	<tr class="error">
-		<th width="100" style ="background-color:#f3edd2"> ID </th>
+		<th width="30" style ="background-color:#f3edd2"> ID </th>
 		<th style ="background-color:#f3edd2"> PROJE İSMİ </th>
 		<th style ="background-color:#f3edd2"> PROJE AÇIKLAMASI </th>
 		<th style ="background-color:#f3edd2"> PROJE RESMİ </th>
+		<th width="30" style="background-color:#f3edd2"> </th>
+		<th width="30" style="background-color:#f3edd2"> </th>
 	</tr>
 	<?php 
 	if($count != 0)
@@ -130,6 +144,8 @@
 		<td>".$satir['p_name']. "</td>
 		<td>".$satir['content']. "</td>
 		<td><img src=".$satir['resim']." style='width:100px;height:60px;'></td>
+		<td><a href='delete.php?p_name=".$satir['p_name']."' class='btn btn-danger'>SİL</a></td>
+		<td><a href='proje.php?id=".$satir['id']."' class='btn btn-info'>DÜZENLE</a></td>
 	</tr>";
 	}
 	
@@ -146,4 +162,5 @@
 </table>
 
 <br><br><br>
+<a href='proje_liste.php' style='margin-left:370px;margin-top:-80px;height:30px;'  class='btn  btn-success' > TÜM PROJE LİSTELERİ</a><br><br><br>
 </div>

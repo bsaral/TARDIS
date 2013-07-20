@@ -18,12 +18,14 @@
 <div  style="position:absolute;top:100px;left:5in;width:9in;font-size:18px;">
 <table class="table table-bordered table-striped table-hover">
 	<tr class="error">
-		<th> ID </th>
-		<th> YER </th>
-		<th> PROJE </th>
-		<th> FİRMA </th>
-		<th> TESLİM </th>
-		<th> RESİM </th>
+		<th width="30" style ="background-color:#d9edf7"> ID </th>
+		<th style ="background-color:#d9edf7"> YER </th>
+		<th style ="background-color:#d9edf7"> PROJE </th>
+		<th style ="background-color:#d9edf7"> FİRMA </th>
+		<th style ="background-color:#d9edf7"> TESLİM </th>
+		<th style ="background-color:#d9edf7"> RESİM </th>
+		<th  width="30" style="background-color:#d9edf7"> </th>
+		<th width="30" style="background-color:#d9edf7"> </th>
 	</tr>
 	<?php 
 	if($count != 0)
@@ -36,7 +38,9 @@
 		<td>".$satir['proje']. "</td>
 		<td>".$satir['firma']. "</td>
 		<td>".$satir['tarih']. "</td>
-		<td><img src=".$satir['resim']." style='width:100px;height:100px;'></td>
+		<td><img src=".$satir['resim']." style='width:100px;height:60px;'></td>
+		<td><a href='delete.php?proje=".$satir['proje']."' class='btn btn-danger'>SİL</a></td>
+		<td><a href='referans.php?id=".$satir['id']."' class='btn btn-info'>DÜZENLE</a></td>
 	</tr>";
 	}
 	
@@ -54,4 +58,6 @@
 	?>
 </table>
 <br><br><br>
+<a href='toplam_liste.php' style='margin-left:300px;margin-top:-80px;height:30px;'  class='btn  btn-warning' > TÜM LİSTELER</a>
+<a href='referans.php' style='margin-left:500px;margin-top:-120px;height:30px;'  class='btn  btn-success' > REFERANS EKLE</a><br><br><br>
 </div>

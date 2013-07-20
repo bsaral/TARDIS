@@ -19,15 +19,15 @@
 <div  style="position:absolute;top:150px;left:4.5in;width:9in;font-size:18px;">
 <table class="table table-bordered table-striped table-hover">
 	<tr class="error">
-		<th style="background-color:#f2dede"> ID </th>
-		<th style="background-color:#f2dede"> AD-SOYAD </th>
-		<th style="background-color:#f2dede"> E-POSTA </th>
-		<th style="background-color:#f2dede"> TELEFON </th>
-		<th style="background-color:#f2dede"> KONU </th>
-		<th style="background-color:#f2dede"> MESAJ </th>
-		<th style="background-color:#f2dede"> </th>
-		<th style="background-color:#f2dede"> </th>
-		<th style="background-color:#f2dede"> </th>
+		<th style="background-color:#d9edf7"> ID </th>
+		<th style="background-color:#d9edf7"> AD-SOYAD </th>
+		<th style="background-color:#d9edf7"> E-POSTA </th>
+		<th style="background-color:#d9edf7"> TELEFON </th>
+		<th style="background-color:#d9edf7"> KONU </th>
+		<th style="background-color:#d9edf7"> MESAJ </th>
+		<th style="background-color:#d9edf7"> </th>
+		<th style="background-color:#d9edf7"> </th>
+		<th style="background-color:#d9edf7"> </th>
 	</tr>
 	<?php 
 		if($count != 0)

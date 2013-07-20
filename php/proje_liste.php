@@ -17,10 +17,12 @@
 <div  style="position:absolute;top:100px;left:5in;width:9in;font-size:18px;">
 <table class="table table-bordered table-striped table-hover">
 	<tr class="error">
-		<th> ID </th>
-		<th> PROJE İSMİ </th>
-		<th> PROJE AÇIKLAMASI </th>
-		<th> PROJE RESMİ </th>
+		<th width="30" style ="background-color:#d9edf7"> ID </th>
+		<th style ="background-color:#d9edf7"> PROJE İSMİ </th>
+		<th style ="background-color:#d9edf7"> PROJE AÇIKLAMASI </th>
+		<th style ="background-color:#d9edf7"> PROJE RESMİ </th>
+		<th width="30" style="background-color:#d9edf7"> </th>
+		<th width="30" style="background-color:#d9edf7"> </th>
 	</tr>
 	<?php 
 	if($count != 0)
@@ -31,7 +33,9 @@
 		<td>".$satir['id']. "</td>
 		<td>".$satir['p_name']. "</td>
 		<td>".$satir['content']. "</td>
-		<td><img src=".$satir['resim']." style='width:100px;height:100px;'></td>
+		<td><img src=".$satir['resim']." style='width:100px;height:60px;'></td>
+		<td><a href='delete.php?p_name=".$satir['p_name']."' class='btn btn-danger'>SİL</a></td>
+		<td><a href='proje.php?id=".$satir['id']."' class='btn btn-info'>DÜZENLE</a></td>
 	</tr>";
 	}
 	
@@ -47,4 +51,6 @@
 	?>
 </table>
 <br><br><br>
+<a href='toplam_liste.php' style='margin-left:300px;margin-top:-80px;height:30px;'  class='btn  btn-warning' > TÜM LİSTELER</a>
+<a href='proje.php' style='margin-left:500px;margin-top:-120px;height:30px;'  class='btn  btn-success' > PROJE EKLE</a><br><br><br>
 </div>
