@@ -1,3 +1,20 @@
+<?php
+   
+  
+  include("config.php");
+
+  
+  if (!isset($_SESSION['name']))
+    {
+      header('Location: index.php');
+    }
+
+ $sql = mysql_query ("SELECT * FROM iletisim  ");
+ $count = mysql_num_rows(mysql_query("SELECT * FROM iletisim "));
+ 
+?>
+
+
 <!DOCTYPE html>
 <meta CHARSEt=UTF-8>
 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" /> 
@@ -36,7 +53,8 @@
           <li><a href="proje.php"><i class="icon-pencil"></i> Projeler Sayfası</a></li><br>
           
           <li class="nav-header" style="font-size:15px;">İLETİŞİM BİLGİLERİ</li><br>
-          <li ><a href="gelen_kutusu.php"><i class=" icon-envelope"></i> Gelen Kutusu</a></li><br>
+          <li ><a href="gelen_kutusu.php"><i class=" icon-envelope"></i> Gelen Kutusu </a></li><br>
+          <p style='position:absolute;top:2.9in;left:1.4in;background-color:red;width:15px;color:white;text-align:center'> <?php echo $count; ?></p> 
           <li><a href="#"><i class=" icon-briefcase"></i> İş Başvuruları</a></li><br>
           
           <li class="nav-header" style="font-size:15px;">HESAP BİLGİLERİ</li><br>

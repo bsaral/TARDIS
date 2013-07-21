@@ -35,7 +35,7 @@
 	
 		
 	<tr class="error">
-		<th width="30" style ="background-color:#f3edd2" > ID </th>
+		
 		<th width="200" style ="background-color:#f3edd2"> HABER BAŞLIĞI </th>
 		<th style ="background-color:#f3edd2"> HABER </th>
 		<th style ="background-color:#f3edd2"> RESİM </th>
@@ -49,7 +49,7 @@
     while($satir = mysql_fetch_array($sql))
 	{
     echo "<tr >
-    	<td >".$satir['id']. "</td>
+    	
 		<td >".$satir['title']. "</td>
 		<td >".$satir['haber']. "</td>
 		<td ><img src=".$satir['image']." style='width:100px;height:60px;'></td>
@@ -78,7 +78,7 @@
 	<thead>
 	<B ><tr > <th colspan="8" style ="text-align:center;background-color:#d9edf7"> REFERANSLAR TABLOSU</th></tr></B>
 	<tr class="error">
-		<th width="30" style ="background-color:#f3edd2"> ID </th>
+		
 		<th style ="background-color:#f3edd2"> YER </th>
 		<th style ="background-color:#f3edd2"> PROJE </th>
 		<th style ="background-color:#f3edd2"> FİRMA </th>
@@ -94,7 +94,7 @@
     while($satir = mysql_fetch_array($sql2))
 	{
     echo "<tr >
-    	<td>".$satir['id']. "</td>
+    	
 		<td>".$satir['yer']. "</td>
 		<td>".$satir['proje']. "</td>
 		<td>".$satir['firma']. "</td>
@@ -127,7 +127,7 @@
 	<thead>
 	<B ><tr > <th colspan="7" style ="text-align:center;background-color:#d9edf7"> PROJELER TABLOSU</th></tr></B>
 	<tr class="error">
-		<th width="30" style ="background-color:#f3edd2"> ID </th>
+		
 		<th style ="background-color:#f3edd2"> PROJE İSMİ </th>
 		<th style ="background-color:#f3edd2"> PROJE AÇIKLAMASI </th>
 		<th style ="background-color:#f3edd2"> PROJE RESMİ </th>
@@ -140,7 +140,7 @@
     while($satir = mysql_fetch_array($sql3))
 	{
     echo "<tr >
-		<td>".$satir['id']. "</td>
+		
 		<td>".$satir['p_name']. "</td>
 		<td>".$satir['content']. "</td>
 		<td><img src=".$satir['resim']." style='width:100px;height:60px;'></td>

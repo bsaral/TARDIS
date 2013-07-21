@@ -17,7 +17,7 @@
 <div  style="position:absolute;top:100px;left:5in;width:9in;font-size:18px;">
 <table class="table table-bordered table-striped table-hover">
 	<tr class="error">
-		<th width="30" style ="background-color:#d9edf7"> ID </th>
+		
 		<th style ="background-color:#d9edf7"> PROJE İSMİ </th>
 		<th style ="background-color:#d9edf7"> PROJE AÇIKLAMASI </th>
 		<th style ="background-color:#d9edf7"> PROJE RESMİ </th>
@@ -30,7 +30,7 @@
     while($satir = mysql_fetch_array($sql))
 	{
     echo "<tr >
-		<td>".$satir['id']. "</td>
+		
 		<td>".$satir['p_name']. "</td>
 		<td>".$satir['content']. "</td>
 		<td><img src=".$satir['resim']." style='width:100px;height:60px;'></td>

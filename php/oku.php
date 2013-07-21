@@ -27,7 +27,7 @@
 					<textarea rows='10' style='width:500px' readonly = 'readonly'>".$oku['mesaj']."</textarea><br><br><br>
 					<div style='position:absolute;left:3in'>
 					<a href='gelen_kutusu.php' class='btn btn-info'>GERİ DÖN</a>&nbsp;&nbsp;&nbsp;&nbsp;
-					<a href='isaretle.php' class='btn btn-success'>İŞARETLE</a></div>
+					<a href='delete.php?id=".$oku['id']."' class='btn btn-danger' style='width:55px;'>SİL</a></div>
 					
 					
 				</div>";

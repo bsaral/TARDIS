@@ -19,7 +19,7 @@
 <div  style="position:absolute;top:150px;left:4.5in;width:9in;font-size:18px;">
 <table class="table table-bordered table-striped table-hover">
 	<tr class="error">
-		<th style="background-color:#d9edf7"> ID </th>
+		
 		<th style="background-color:#d9edf7"> AD-SOYAD </th>
 		<th style="background-color:#d9edf7"> E-POSTA </th>
 		<th style="background-color:#d9edf7"> TELEFON </th>
@@ -35,7 +35,7 @@
 		    while($satir = mysql_fetch_array($sql))
 			{
 			    echo "<tr >
-					<td>".$satir['id']. "</td>
+					
 					<td>".$satir['isim']. "</td>
 					<td>".$satir['mail']. "</td>
 					<td>".$satir['telefon']. "</td>
@@ -43,7 +43,7 @@
 					<td>".$satir['mesaj']. "</td>
 					<td><a href='delete.php?id=".$satir['id']."' class='btn btn-danger'>SİL</a></td>
 					<td><a href='oku.php?id=".$satir['id']."' class='btn btn-info'>OKU</a></td>
-					<td><a href='isaretle.php?id=".$satir['id']."' class='btn btn-success'>İŞARETLE</a></td>
+					<td><a href='_header2.php?id=".$satir['id']."' class='btn btn-success'>İŞARETLE</a></td>
 				</tr>";
 			}
 		
@@ -62,15 +62,3 @@
 <br><br><br>
 </div>
 </form>
-
-<?php
-if (isset($_POST['sil'])){
-	$ID = $_GET['id'];
-	
-	
-		echo "
-				<h1 style='font-size:100px'>".$ID."</h1>"; 
-	
-}
-
-?>
