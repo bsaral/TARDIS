@@ -27,7 +27,7 @@
 		<th style="background-color:#d9edf7"> MESAJ </th>
 		<th style="background-color:#d9edf7"> </th>
 		<th style="background-color:#d9edf7"> </th>
-		<th style="background-color:#d9edf7"> </th>
+		
 	</tr>
 	<?php 
 		if($count != 0)
@@ -43,7 +43,7 @@
 					<td>".$satir['mesaj']. "</td>
 					<td><a href='delete.php?id=".$satir['id']."' class='btn btn-danger'>SİL</a></td>
 					<td><a href='oku.php?id=".$satir['id']."' class='btn btn-info'>OKU</a></td>
-					<td><a href='_header2.php?id=".$satir['id']."' class='btn btn-success'>İŞARETLE</a></td>
+					
 				</tr>";
 			}
 		
