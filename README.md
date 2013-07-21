@@ -35,4 +35,4 @@ YÖNETİM PANELİ - STAJ PROJESİ
 
 9- Admin isterse sisteme giriş parolasını değiştirebilir. 
 
-<img src = "http://i.imgur.com/jDboxXd.png" />
+<img src = "http://i.imgur.com/j2cf1dV.png" />
